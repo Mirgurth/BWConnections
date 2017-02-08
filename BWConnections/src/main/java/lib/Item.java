@@ -8,7 +8,35 @@ public class Item {
 	private boolean legendary;
 	private int type;
 	private int base;
+	private int quality;
+	private int grade;
 	private String displayName;
+	
+	public Item(){		
+	}
+	
+	public Item(int pref, int suff, boolean isLegendary, int type, int base, int quality, int grade, String displayName){
+		this.pref = pref;
+		this.suff = suff;
+		this.legendary = isLegendary;
+		this.type = type;
+		this.base = base;
+		this.quality = quality;
+		this.grade = grade;
+		this.displayName = displayName;	
+	}
+	
+	public Item(long id, int pref, int suff, boolean isLegendary, int type, int base, int quality, int grade, String displayName){
+		this.id = id;
+		this.pref = pref;
+		this.suff = suff;
+		this.legendary = isLegendary;
+		this.type = type;
+		this.base = base;
+		this.quality = quality;
+		this.grade = grade;
+		this.displayName = displayName;			
+	}
 
 	public long getId() {
 		return id;
@@ -64,6 +92,22 @@ public class Item {
 
 	public void setDisplayName(String displayName) {
 		this.displayName = displayName;
+	}
+
+	public int getQuality() {
+		return quality;
+	}
+
+	public void setQuality(int quality) {
+		this.quality = quality;
+	}
+
+	public int getGrade() {
+		return grade;
+	}
+
+	public void setGrade(int grade) {
+		this.grade = grade;
 	}
 	
 	
