@@ -1,4 +1,4 @@
-package lib;
+package bwconnections.lib.item;
 
 public class Item {
 
