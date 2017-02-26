@@ -1,6 +1,6 @@
 package bwconnections.lib.translators;
 
-import bwconnections.lib.item.Item;
+import bwconnections.lib.database.domain.Item;
 
 public class ItemTranslator {
 	
